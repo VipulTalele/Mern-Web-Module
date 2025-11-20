@@ -122,3 +122,10 @@ Add your screenshots here:
 Example Markdown:
 
 ![Home Page](screenshots/home.png)
+
+
+## 🙌 Author  
+**Vipul Talele**  
+📧 Email: vipultalele14792@gmail.com  
+🐙 GitHub: https://github.com/vipultalele 
+🔗 LinkedIn: (http://linkedin.com/in/vipul-talele-834853286)
