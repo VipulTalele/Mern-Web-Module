@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: 500px;
+            background-color: #2b63a2; /* ✅ Blue background */
+            color: white;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0px 0px 10px #333;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="url"],
+        input[type="number"],
+        select {
+            padding: 4px;
+            border-radius: 3px;
+            border: none;
+            width: 220px;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        button {
+            background-color: #6ebd00;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #5aa500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <fieldset>
+                <legend>Registration Details</legend>
+
+                <label>University :</label>
+                <input type="text" name="university"><br>
+
+                <label>Institute :</label>
+                <input type="text" name="institute"><br>
+
+                <label>Branch :</label>
+                <select name="branch">
+                    <option>--select--</option>
+                    <option>Computer Science</option>
+                    <option>Mechanical</option>
+                    <option>Civil</option>
+                    <option>Electrical</option>
+                </select><br>
+
+                <label>Degree :</label>
+                <select name="degree">
+                    <option>--select--</option>
+                    <option>B.Tech</option>
+                    <option>M.Tech</option>
+                </select>
+                <input type="radio" name="status" value="pursuing"> Pursuing
+                <input type="radio" name="status" value="completed"> Completed
+                <br>
+
+                <label>Average CPI :</label>
+                <input type="number" step="0.1" min="0" max="10" style="width:60px;">
+                Upto <input type="number" min="1" max="10" style="width:40px;"> Th Semester
+                <br>
+
+                <label>Experience :</label>
+                <input type="number" min="0" style="width:60px;"> Years<br>
+
+                <label>Your Website Or Blog :</label>
+                <input type="url" placeholder="http://"><br>
+            </fieldset>
+
+            <div class="button-container">
+                <button type="submit">Step 2</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

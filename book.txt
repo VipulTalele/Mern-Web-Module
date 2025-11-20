@@ -1,0 +1,4 @@
+Bookid | bookname | author | Sellingprice | finalprice
+1001|Core Java|Cay Horstman|500|450
+1002|Python Pro|Guido Rossum|600|540
+1003|JS Mastery|Brendan Eich|450|405

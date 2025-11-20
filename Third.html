@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toy Products</title>
+</head>
+<body>
+
+<h2>Toy Products (Category: toys)</h2>
+
+<table border="1" cellpadding="6">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody id="toyBody"></tbody>
+</table>
+
+<script>
+    
+    let productArr = [
+        { pid: 1001, prodName: "Gaming Headset", price: 3000, category: "Headset" },
+        { pid: 1002, prodName: "Lego Car", price: 1500, category: "toys" },
+        { pid: 1003, prodName: "Football", price: 800, category: "sports" },
+        { pid: 1004, prodName: "Toy Train", price: 1200, category: "toys" }
+    ];
+
+    
+    let ToyArray = productArr.filter(product => product.category === "toys");
+
+    
+    let toyBody = document.getElementById("toyBody");
+
+    ToyArray.forEach(product => {
+        toyBody.innerHTML += `
+            <tr>
+                <td>${product.pid}</td>
+                <td>${product.prodName}</td>
+                <td>${product.price}</td>
+                <td>${product.category}</td>
+            </tr>
+        `;
+    });
+</script>
+
+</body>
+</html>

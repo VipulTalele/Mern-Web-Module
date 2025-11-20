@@ -1,0 +1,5 @@
+[
+  { "bookid": 1001, "bookname": "Core Java", "author": "Cay Horstman", "sellingprice": 500 },
+  { "bookid": 1002, "bookname": "Python Pro", "author": "Guido Rossum", "sellingprice": 600 },
+  { "bookid": 1003, "bookname": "JS Mastery", "author": "Brendan Eich", "sellingprice": 450 }
+]
